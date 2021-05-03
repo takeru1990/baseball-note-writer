@@ -1,0 +1,70 @@
+<HTML>
+   <HEAD>
+      <TITLE>
+         野球ノート作成
+      </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js.js"></script>
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+      <link rel="stylesheet" type="text/css" href="css.css">
+   </HEAD>
+   <body>
+      <div id="wrapper">
+      <div id="teams">
+         <input type="text" placeholder="1試合目の先攻" id="offe_1"/>
+         － <input type="text" placeholder="1試合目の後攻" id="defe_1"/><br>
+         <input type="text" placeholder="2試合目の先攻" id="offe_2"/>
+         － <input type="text" placeholder="2試合目の後攻" id="defe_2"/><br>
+      </div>
+      <hr>
+      <div id="result">
+         <table>
+            <tbody>
+               <tr>
+                  <td rowspan="2">結果</td>
+                  <td><input type="text" placeholder="1試合目の先攻の点" id="point_1o"/></td>
+                  <td>－</td>
+                  <td><input type="text" placeholder="1試合目の後攻の点" id="point_1d"/></td>
+                  <td>：</td>
+                  <td><input type="text" autocomplete="on" list="test"  placeholder="1試合目の勝敗" id="result_1"></td>
+               </tr>
+               <tr>
+                  <td><input type="text" placeholder="2試合目の先攻の点" id="point_2o"/></td>
+                  <td>－</td>
+                  <td><input type="text" placeholder="2試合目の後攻の点" id="point_2d"/></td>
+                  <td>：</td>
+                  <td><input type="text" autocomplete="on" list="test"  placeholder="2試合目の勝敗" id="result_2"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <datalist id="test">
+         <option value="勝ち！" />
+         <option value="負け..." />
+         <option value="引き分け" />
+      </datalist>
+      <br>
+      <div id="content_div">
+      <textarea id="content" wrap="soft" placeholder="試合内容"></textarea>
+      </div><br>
+      <div style="border-style: solid; border-width: 1px; float: left; padding: 5px 5px 5px 20px;width: 100px;">学んだこと</div>
+      <input type="button" value="学んだことをクリア" onclick="aaa()" />
+      <ul>
+      <li><div id="lsn_1"><input type="text" placeholder="学んだこと1" id="lesson_1"/></div></li>
+      <li><div id="lsn_2"><input type="text" placeholder="学んだこと2" id="lesson_2"/></div></li>
+      <li><div id="lsn_3"><input type="text" placeholder="学んだこと3" id="lesson_3"/></div></li>
+      <li><div id="lsn_4"><input type="text" placeholder="学んだこと4" id="lesson_4"/></div></li>
+      <li><div id="lsn_5"><input type="text" placeholder="学んだこと5" id="lesson_5"/></div></li>
+      <li><div id="lsn_6"><input type="text" placeholder="学んだこと6" id="lesson_6"/></div></li>
+      <li><div id="lsn_7"><input type="text" placeholder="学んだこと7" id="lesson_7"/></div></li>
+      </ul>
+      <div id="date_div">
+      <input type="date" value="2003-07-07" id="date" /><br><br>
+      </div><br><br>
+      <div id="make">
+      <input type="button" value="TeXソース生成" onclick="test()" />
+      </div><br><br>
+      <textarea style="width:800px; height:400px; font-family:'ricty diminished';" id="note" readonly>ここにTeXソースを表示</textarea><br><br>
+   </BODY>
+</HTML>
