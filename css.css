@@ -1,0 +1,79 @@
+body {
+	text-align: center;
+}
+
+div#wrapper {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+div#teams {
+	width: 400px;
+	margin: 0 auto;
+}
+
+div#result {
+	width: 600px;
+	margin: 0 auto;
+}
+
+textarea#content {
+	width: 700px;
+	height: 400px;
+}
+
+div#content_div {
+	width: 700px;
+	margin: 0 auto;
+}
+
+div#date_div {
+	float: right;
+}
+
+div#make {
+	margin: 0 auto;
+}
+
+input#lesson_1 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
+
+input#lesson_2 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
+
+input#lesson_3 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
+
+input#lesson_4 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
+
+input#lesson_5 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
+
+input#lesson_6 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
+
+input#lesson_7 {
+	width: 600px;
+	height: 40px;
+	overflow-wrap: break-word;
+}
