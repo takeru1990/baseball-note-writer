@@ -1,0 +1,37 @@
+\documentclass{jsarticle}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[top=20truemm,bottom=20truemm,left=15truemm,right=15truemm]{geometry}
+\setstretch{0.9}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\begin{document}
+\title{\HUGE{野球ノート}}
+\date{\flushright{2003年5月18日 - 2004年6月12日}}
+\maketitle
+\thispagestyle{empty}
+\twocolumn%ここまで表紙の情報
+\setcounter{page}{1}%次のページを1ページとする
+%%%%%%%%%%%%%%%%%%%%%%%ここからテンプレート
+\begin{center}
+	{\bfseries \LARGE %team name
+		\begin{tabular}{ccc}
+			%学校名 &-&%学校名 \\
+			%複数試合の時は&-&%その分記入する 
+		\end{tabular}
+		}\noindent \rule{\columnwidth}{0.1mm} \\
+	\begin{tabular}{cccccc}
+		\multirow{%試合数}{*}{結果}  & %先攻得点 &-& %後攻側得点  &:&%自分の勝敗\\
+		  & %先攻得点 &-& %後攻得点  &:&%自分の勝敗 
+	\end{tabular}
+\end{center}
+%試合内容
+\medskip \noindent \fbox{学んだこと}
+\begin{itemize}
+	\item %学んだことを
+	\item %箇条書きにまとめる
+\end{itemize}
+\begin{flushright}(%ヒヅケ)\end{flushright}
+	\newpage
+	%%%%%%%%%%%%%%%%%%%%ここまでテンプレート，必要分繰り返す
+\end{document}
